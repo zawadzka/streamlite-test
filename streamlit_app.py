@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 st.header('st.write')
 
 st.header('text')
-st.write('text')
+st.markdown("test dla :red[kolorowania]")
 
 st.write(123)
 df = pd.DataFrame([[2, 3], [4, 5]], columns=['q', 's'])
