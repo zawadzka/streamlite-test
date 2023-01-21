@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import numpy as np
-import matplotlib.pyplot as plt
 
 st.header('st.write')
 
@@ -25,14 +24,6 @@ d = alt.Chart(df).mark_point().encode(x='q', y='s')
 st.write(d)
 
 
-arr = np.random.normal(1, 1, size=100)
-fig, ax = plt.subplots()
-ax.hist(arr, bins=20)
-
-fig
-
-new = arr.T
-new[:10]
 if not st.button('Say hello'):
     st.write('Goodbye')
 else:
