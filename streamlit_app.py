@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 
 st.header('st.write')
@@ -25,11 +25,11 @@ st.write(c)
 d = alt.Chart(df).mark_point().encode(x='q', y='s')
 st.write(d)
 
-fig, ax = plt.subplots()
-
-ax.plot([1, 2, 3], [4, 6, 9])
-plt.show()
-fig
+# fig, ax = plt.subplots()
+#
+# ax.plot([1, 2, 3], [4, 6, 9])
+# plt.show()
+# fig
 
 if not st.button('Say hello'):
     st.write('Goodbye')
